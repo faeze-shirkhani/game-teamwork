@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Code Game - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="signin.css">
+</head>
+<body>
+
+  <div class="container pt-5">
+    <div class="card mx-auto p-4 shadow-sm" id="main-card">
+      <h3 class="text-center mb-4">Welcome to Color Code Game</h3>
+
+      
+      <div class="position-relative mb-3" id="auth-section">
+        <input type="email" class="form-control custom-email-input text-center" id="emailInput" >
+        <div class="position-absolute top-50 start-0 translate-middle-y ps-3">
+          <button class="btn btn-success custom-btn" id="signInBtn" onclick="signIn()">Sign In</button>
+        </div>
+        <div class="position-absolute top-50 end-0 translate-middle-y pe-3">
+        <button class="btn btn-success custom-btn" onclick="goToSignup()">Sign Up</button>
+        </div>
+      </div>
+
+      
+      <div class="px-2 d-flex">
+        <button class="btn btn-success w-150" id="leaderboardBtn" onclick="goToLeaderboard()">View Leaderboard</button>
+      </div>
+
+      
+      <div id="error-message" class="text-danger text-center mt-2 mb-2"></div>
+
+      
+      <div id="user-info" class="mt-4 d-none text-center">
+        <p><strong id="username"></strong></p>
+        <p>Score: <span id="score">0</span></p>
+
+        <div class="mt-3">
+          <select id="level" class="form-select mb-2">
+            <option disabled selected>Choose Game Level</option>
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+          </select>
+          <button class="btn btn-primary w-100" onclick="startGame()">Start Game</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="signin.js"></script>
+</body>
+</html>
+
+
+
+
+
