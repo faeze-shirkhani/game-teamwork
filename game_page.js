@@ -37,6 +37,7 @@ const timer = setInterval(() => {
   if (timeLeft <= 0) {
     clearInterval(timer);
     alert(`time is up!Game over. correct pass:${randomPassword.join(",")} `);
+    window.location.href = "home.html";
     return;
   }
   timeLeft--;
@@ -170,7 +171,12 @@ submit.addEventListener("click", () => {
   const { correct, misplaced } = guesscheker(currentGesse, randomPassword);
   displayGuess(currentGesse, correct, misplaced);
   if (correct === currentGesse.length) {
-    alert("you win!");
+    gameOver = true;
+    clearInterval(timer);
+    user.score += point;
+
+    alert(`you win!  pass: ${randomPassword.join(",")}`);
+    window.location.href = "home.html";
     return;
   }
 
@@ -184,5 +190,6 @@ submit.addEventListener("click", () => {
     alert(`game over! correct pass: ${randomPassword.join(",")}`);
     gameOver = true;
     clearInterval(timer);
+    window.location.href = "home.html";
   }
 });
