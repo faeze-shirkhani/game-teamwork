@@ -50,14 +50,14 @@ function handleSignup() {
   .then(data => {
     success.textContent = "Signup successful! Redirecting to Sign In...";
     setTimeout(() => {
-      window.location.href = "signin.html";
+      window.location.href = "./signin2.html";
     }, 2000);
   })
   .catch(err => {
     console.error("API Error:", err);
     success.textContent = "Signup locally successful, but couldn't reach server.";
     setTimeout(() => {
-      window.location.href = "signin.html";
+      window.location.href = "./signin2.html";
     }, 3000);
   });
 }

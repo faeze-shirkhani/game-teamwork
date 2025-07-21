@@ -23,6 +23,6 @@ function handleSignIn() {
   localStorage.setItem("loggedInUser", email);
 
   setTimeout(() => {
-    window.location.href = "home.html"; 
+    window.location.href = "signin2.html"; 
   }, 2000);
 }

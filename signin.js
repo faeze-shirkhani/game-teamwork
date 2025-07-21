@@ -66,6 +66,9 @@ function startGame() {
 function goToSignup() {
   window.location.href = "signup.html";
 }
+function goToSignin() {
+  window.location.href = "signin2.html";
+}
 
 
 
