@@ -51,7 +51,6 @@ startBtn.addEventListener("click", () => {
 });
 
 
-  setTimeout(() => {
-    window.location.href = "signin2.html"; 
-  }, 2000);
+
+
 
