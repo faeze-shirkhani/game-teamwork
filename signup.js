@@ -64,7 +64,7 @@ async function handleSignup() {
 
     success.textContent = "Signup successful! Redirecting...";
     setTimeout(() => {
-      window.location.href = "signin2.html";
+      window.location.href = "signin.html";
     }, 2000);
   } catch (err) {
     console.error("Signup error:", err);

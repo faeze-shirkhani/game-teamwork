@@ -51,7 +51,7 @@ startBtn.addEventListener("click", () => {
 });
 
 
-const btnScore = document.querySelector("#btn-scores")
+const btnScore = document.querySelector("#leaderboardBtn")
 
 btnScore.addEventListener("click", () =>{
   window.location.href = "score.html"
